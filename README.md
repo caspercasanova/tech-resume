@@ -1,2 +1,11 @@
 # tech-resume
-Lets get this puppy on heroku 
+Node/React/Heroku and possible other Technologies
+
+# About Me 
+My name is Nicholas Lopez, and I'm full stack engineer based in the LA area and am looking for work/job. This repo is essentially my online portfolio page. With it I wanted to combine my technical background and low level artistic abilities. 
+
+# Reach Out
+Please feel free to connect/message me on LinkedIn
+https://www.linkedin.com/in/310-nicholas-lopez/
+
+
