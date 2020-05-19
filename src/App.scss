@@ -1,0 +1,274 @@
+/* NEW SHIT */
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+.scroller::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+.scroller::-webkit-scrollbar-track {
+  background: white;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  background: #7f7f7f;
+  border-right: 1px solid white;
+}
+
+
+
+.App{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100vh;
+  @include for-tablet-portrait-up{
+    width: 40%;
+  }
+  @include for-phone-only{
+  
+  }
+}
+
+
+
+
+.txt_box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.txt_row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 3px;
+}
+.tray{
+  @include for-tablet-portrait-up{
+    border: 1px solid var(--color-epic);
+    padding: 10px;
+  }
+  @include for-phone-only{
+    border-bottom: 1px solid var(--color-epic);
+  }
+}
+
+
+.about{
+  height: 100%;
+  overflow: scroll;
+  color: rgba(80, 0, 202, .3);
+}
+
+
+
+.wave{
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite
+}
+
+
+.header{
+  height: auto;
+}
+.center_content_body{
+  height: 100%;
+}
+
+.footer{
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  .fab {
+    font-size: 40px;
+    animation: spinY 10s ease-in infinite;
+  }
+  @include for-tablet-portrait-up{
+    
+  }
+}
+
+
+
+
+.contact{
+  height: 100%;
+  @include for-tablet-portrait-up{
+    display: flex;
+  }
+  @include for-phone-only{
+    border-bottom: 1px solid var(--color-epic);
+  }
+}
+
+
+.driverslicense_header{
+  justify-content: space-around;
+  align-items: center;
+  @include for-phone-only{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.driverslicense_body{
+  display: flex; 
+  width: 100%;
+}
+.driverslicense_body_text{
+  width: 100%;
+}
+.driverslicense_body_footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.driverslicense_body_footer_item{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  &.driverslicense_body_footer_item p{
+    padding-left: 20px;
+    padding-right: 20px;
+    @include for-phone-only{
+      padding-left: 3px;
+      padding-right: 5px;
+    }
+  }
+}
+
+.profile_pic{ 
+  width: 200px;
+}
+.profile_pic img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+.technologies{
+  height: 100%;
+}
+
+.technologies_body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frontend{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.frontend *{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.frontend *:hover{
+  animation: spinY .8s ease-out;
+}
+
+.backend{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.backend *{
+  margin: 1px 15px 1px 2px;
+  padding-left: 5px;
+}
+.backend_logos{
+  width: 100px;
+}
+
+.backend_logos *:hover{
+  animation: spinY .8s ease-out;
+}
+
+
+
+
+
+
+
+
+
+@keyframes spinY {
+  from { transform: rotateY(0); }
+  to { transform: rotateY(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.fa-file-invoice-dollar{
+  color: rgb(159, 20, 20);
+}
+.fa-phone-alt{
+  color: navajowhite;
+}
+
+.fa-envelope{
+  color: rebeccapurple;
+}
+
+
+.fa-github{
+  color: #0e76a8;
+}
+.fa-linkedin-in{
+  color: #0e76a8 ;
+}
+
+.fa-js{color: deeppink;}
+.fa-node{color: #3C873A;}
+.fa-react{color: #61DBFB;}
+.fa-html5{color: #E44D26;}
+.fa-css3-alt{color: #E31B5F;}
+.fa-adobe{color: #FF3500}
+
+
+.fas{
+  font-size: 50px;
+  color: deeppink;
+}
+
+
+.fab{
+  font-size: 50px;
+  color: deeppink;
+}

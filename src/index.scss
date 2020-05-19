@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&display=swap');
+:root{
+  --color-rare: #00aeff;
+  --color-legendary: #fe7a15;
+  --color-epic: #BA87FF;
+  --text-normal: #ABF0F9;
+  --answer-color: #0f0;
+  --text-grey: rgba(255,255,255,0.8);
+  --background-light: rgb(25, 39, 52);
+  --background-dark: rgb(19, 27, 35);
+  --base-radius: .3em;
+  
+}
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: .5px;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: var(--color-rare);
+  text-decoration: none;
+}
+
+
+h3, h4{
+  color: #ABF0F9;
+}
+
+h3:hover, h4:hover{
+  cursor: pointer;
+}
+
+h6{
+  color: var(--text-grey)
+}
+
+p {
+  color: var(--color-epic);
+  font-size: 15px;
+}
+
+
+button{
+  text-transform: uppercase;
+  padding: 10px 18px;
+  letter-spacing: 2px;
+  font-size: 18px;
+  line-height:18px;
+  outline: none;
+  border-radius: var(--base-radius);
+  border: 1px solid var(--color-rare);
+  background: none;
+  color: var(--color-rare);
+  &:hover{
+    color: var(--text-normal);
+    border-color: var(--text-normal)
+  };
+  @include for-phone-only{
+    padding: 8px 9px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    line-height:18px;
+  }
+}
