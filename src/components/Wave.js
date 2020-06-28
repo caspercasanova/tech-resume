@@ -3,7 +3,7 @@ import React from 'react'
 export default function Wave() {
   return (
   <div style={{width: '100%'}}>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" width="100%" height="100%">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" >
       <path className='wave'
         fill="#e7008a"
         d="M0 128l16 32c16 32 48 96 80 112s64-16 96-58.7c32-42.3 64-96.3 96-122.6C320 64 352 64 384 96s64 96 96 117.3c32 21.7 64-.3 96-5.3s64 5 96 26.7c32 21.3 64 53.3 96 53.3s64-32 96-85.3C896 149 928 75 960 85.3 992 96 1024 192 1056 208s64-48 96-42.7c32 5.7 64 79.7 96 106.7s64 5 96-10.7c32-16.3 64-26.3 80-32l16-5.3v96H0z"

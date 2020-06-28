@@ -1,22 +1,22 @@
-import React,{useState} from 'react'
+import React from 'react'
 
 import Story from './Story.js'
 import Wave from './Wave.js'
-
+import Countdown from './Countdown'
 import awsLogo from '../pics/aws-2.svg'
 import mongoLogo from '../pics/mongodb.svg'
 import psqlLogo from '../pics/postgresql.svg'
 import mysqllogo from '../pics/mysql-5.svg'
-
+import hackreactor from '../pics/hackreactor.svg'
 import profilePic from '../pics/profilePic.jpg'
 
 export default function Resume() {
-  const [component, setComponent] = useState('Story')
+ 
   return (
     <>
       <Header />
-      <Navagation setComponent={setComponent}/>
-      <Body component={component} />
+      <Navagation />
+      <Body  />
       <Footer />
     </>
   )
@@ -44,24 +44,18 @@ const Navagation = ({setComponent}) => {
 
   return(
   <div className='tray'>
-    <div>
-      <button onClick={() => setComponent('Story')}>Story</button>
-      <button onClick={() => setComponent('Art')}>Art</button>
-      <button onClick={() => setComponent('Journal')}>Journal</button>
-      <button onClick={() => setComponent('Skillz')}>Skillz</button>
-      <button onClick={() => setComponent('Contact')}>Contact</button>
-    </div>
+      <Countdown />
   </div>
   )
 }
 
-const Body = ({component}) => {
+const Body = () => {
   
   return(
     <div className='center_content_body'>
-      {component === 'Story' && <Story />}
-      {component === 'Skillz' && <Technologies />}
-      {component === 'Contact' && <Contact />}  
+       <Story />
+       <Contact />  
+      
     </div>
   )
 }
@@ -133,7 +127,7 @@ const Contact = () => {
           </div>
         </div>
       <Wave />
-
+      <Technologies />
     </div>
   </div>
   )
@@ -146,7 +140,7 @@ const Contact = () => {
 
 const Technologies = () =>{
   return (
-  <div className='tray technologies'>
+  <div className='technologies'>
     <h3>Technologies</h3>
     <div className='technologies_body'>
       <h6>Frontend Technologies</h6>
@@ -180,6 +174,7 @@ const Footer = () => {
       <div className=''>
         <a href='https://www.linkedin.com/in/310-nicholas-lopez/'><i className="fab fa-linkedin-in"></i></a>
         <a href='https://github.com/caspercasanova'><i className="fab fa-github"></i></a>
+        <a href='https://www.hackreactor.com/'><div className='backend_logos' style={{width: '110px'}}><img src={hackreactor} alt='SQL Logo'/></div></a>
       </div>
       <p>
         CopyWrite {date.getFullYear()}

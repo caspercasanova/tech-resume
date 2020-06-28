@@ -10,7 +10,6 @@ function App() {
 
 
         <Resume />
-
         {console.log(`%c${secretMessage}`, 'color: cyan; font-weight: bold;')}
     </div>
   );

@@ -29,9 +29,9 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  height: 100vh;
+  
   @include for-tablet-portrait-up{
-    width: 40%;
+    max-width: 1000px;
   }
   @include for-phone-only{
   
@@ -65,7 +65,7 @@
 
 .about{
   height: 100%;
-  overflow: scroll;
+  
   color: rgba(80, 0, 202, .3);
 }
 
@@ -105,7 +105,6 @@
 
 
 .contact{
-  height: 100%;
   @include for-tablet-portrait-up{
     display: flex;
   }
@@ -167,9 +166,7 @@
 
 
 
-.technologies{
-  height: 100%;
-}
+.technologies{}
 
 .technologies_body{
   display: flex;
@@ -271,4 +268,53 @@
 .fab{
   font-size: 50px;
   color: deeppink;
+}
+
+
+
+
+.slider{
+
+  
+  & .slider_btn_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  & .slider_block_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  & .block{
+    height: 10px;
+  }
+  & .active{
+    color: inherit;
+    background-color: var(--color-rare);
+  }
+  & .inactive{
+    background-color: rgb(35, 33, 33);
+    border-color: rgb(35, 33, 33);
+    &:hover{
+      background-color: var(--color-rare);
+      opacity: .3;
+    }
+  }
+}
+
+.countdown{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  & .countdown_body{
+    display: flex;
+  }
+  & .interval{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
 }
