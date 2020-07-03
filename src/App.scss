@@ -135,6 +135,10 @@
 .driverslicense_body{
   display: flex; 
   width: 100%;
+  @include for-phone-only{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .driverslicense_body_text{
@@ -144,6 +148,11 @@
   background-color:  #252244cd;
   border-radius: 10px;
   border: 1px solid black;
+  @include for-phone-only{
+    width: 100%;
+    margin: 0;
+   }
+   
 }
 .driverslicense_body_footer{
   padding: 10px;
@@ -151,26 +160,14 @@
   border-radius: 10px;
   margin-left: 10px;
   border: 1px solid black;
+  width: 100%;
+  @include for-phone-only{
+    width: 100%;
+    margin: 0;
+   }
 }
 
 
-.driverslicense_body_footer_item{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  
-  
-  &.driverslicense_body_footer_item p{
-    margin-left: 26px;
-    @include for-phone-only{
-      padding-left: 3px;
-      padding-right: 5px;
-    }
-  }
-}
 .dl_btn_holder{
   width: 100%;
   display: flex;
@@ -190,11 +187,14 @@
 }
 
 .profile_pic{ 
-  width: 200px;
+  width: 400px;
   background-color:  #252244cd;
   border-radius: 10px;
   padding-bottom: 10px;
   border: 1px solid black;
+  @include for-phone-only{
+   width: 100%;
+  }
   
 }
 .profile_pic img{
@@ -209,7 +209,11 @@
 
 .education{
   display: flex;
-  text-align: left;
+  text-align: left;  
+  @include for-phone-only{
+    justify-content: center;
+    flex-wrap: wrap;
+   }
 }
 .education_text{
   padding-right: 20px;

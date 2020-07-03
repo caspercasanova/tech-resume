@@ -5,6 +5,8 @@ import psqlLogo from '../pics/postgresql.svg'
 import mysqllogo from '../pics/mysql-5.svg'
 
 const Technologies = () =>{
+
+
   return (
   <div className='technologies'>
     <h3>Technologies</h3>
