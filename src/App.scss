@@ -72,7 +72,6 @@
 
 .about{
   height: 100%;
-  
   color: rgba(80, 0, 202, .3);
 }
 
@@ -368,7 +367,7 @@
   }
   & .active{
     color: inherit;
-    background-color: var(--color-rare);
+    background-color: var(--color-pink);
   }
   & .inactive{
     background-color: rgb(35, 33, 33);

@@ -1,10 +1,17 @@
 import React, {useState} from 'react'
-import Wave from './Wave.js'
+
 import Technologies from './Technologies'
 import hackreactor from '../pics/hackreactor.svg'
 import profilePic from '../pics/profilePic.jpg'
+
+import Wave from 'react-wavify'
+
+
+
+
+
 const DriversLiscence = () => {
-  const [component, setComponent] = useState('education')
+  const [component, setComponent] = useState('wave')
 
 
   return (
@@ -58,9 +65,20 @@ const DriversLiscence = () => {
         <button className={component === "tech" ? 'active' : ''} onClick={()=>setComponent('tech')}>Technologies</button>
         <button className={component === "education" ? 'active' : ''} onClick={()=>setComponent('education')}>Education</button>
       </div>
-      {component === "wave" && <Wave />}
       {component === "tech" && <Technologies />}
       {component === "education" && <Education />}
+      
+      {component === "wave" && 
+      <Wave fill='#f79902'
+            paused={false}
+            options={{
+              height: 50,
+              amplitude: 30,
+              speed: 0.15,
+              points: 5
+            }}/>
+            
+        }
       
     </div>
   </div>

@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&display=swap');
 :root{
   --color-rare: #00ffee;
-  --color-legendary: #fe7a15;
+  --color-legendary: #f79902;
   --color-epic: #BA87FF;
   --text-normal: #00ffee;
   --answer-color: #0f0;
+  --color-pink: rgb(255, 0, 208);
   --text-grey: rgba(255,255,255,0.8);
   --background-light: rgb(25, 39, 52);
   --background-dark: rgb(19, 27, 35);
@@ -79,12 +80,12 @@ button{
   line-height:18px;
   outline: none;
   border-radius: var(--base-radius);
-  border: 1px solid var(--color-rare);
+  border: 1px solid var(--color-pink);
   background: none;
-  color: var(--color-rare);
+  color: var(--color-pink);
   &:hover{
     color: var(--text-normal);
-    border-color: var(--text-normal)
+    border-color: var(--color-pink)
   };
   @include for-phone-only{
     padding: 8px 9px;
