@@ -53,6 +53,13 @@
   padding-bottom: 3px;
 }
 .tray{
+  background-color: #1d2636;
+  
+  background-color: #130f24;
+  
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   @include for-tablet-portrait-up{
     border: 1px solid var(--color-epic);
     padding: 10px;
@@ -122,41 +129,78 @@
     align-items: flex-start;
   }
 }
+
+.driverslicense_hr_top{
+  margin-bottom: 10px;
+}
 .driverslicense_body{
   display: flex; 
   width: 100%;
 }
+
 .driverslicense_body_text{
   width: 100%;
+  margin-left: 10px;
+  padding: 10px;
+  background-color:  #252244cd;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 .driverslicense_body_footer{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
+  padding: 10px;
+  background-color:  #252244cd;
+  border-radius: 10px;
+  margin-left: 10px;
+  border: 1px solid black;
 }
+
+
 .driverslicense_body_footer_item{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  
   &.driverslicense_body_footer_item p{
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 26px;
     @include for-phone-only{
       padding-left: 3px;
       padding-right: 5px;
     }
   }
 }
+.dl_btn_holder{
+  width: 100%;
+  display: flex;
+  & button{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-radius: 0;
+  }
+  & .active{
+    color: var(--color-legendary);
+    border-color: var(--color-legendary);
+  }
+}
 
 .profile_pic{ 
   width: 200px;
+  background-color:  #252244cd;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+  
 }
 .profile_pic img{
   width: 100%;
+  border-radius: 10px;
   height: auto;
 }
 
@@ -164,9 +208,32 @@
 
 
 
+.education{
+  display: flex;
+  text-align: left;
+}
+.education_text{
+  padding-right: 20px;
+  padding-left: 20px;
+
+  & ul{
+    & li{
+      margin-left: 16px;
+      margin-top: 16px;
+    }
+    text-indent: -20px;
+  }
+}
 
 
-.technologies{}
+.technologies{
+  padding: 10px;
+  margin-top: 10px;
+  & hr{
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+}
 
 .technologies_body{
   display: flex;
@@ -196,6 +263,7 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
 .backend *{
   margin: 1px 15px 1px 2px;
   padding-left: 5px;
@@ -204,6 +272,14 @@
   width: 100px;
 }
 
+.hackreactorlogo{
+  width: 150px;
+  & img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
 .backend_logos *:hover{
   animation: spinY .8s ease-out;
 }
@@ -268,6 +344,7 @@
 .fab{
   font-size: 50px;
   color: deeppink;
+  margin-bottom: 10px;
 }
 
 

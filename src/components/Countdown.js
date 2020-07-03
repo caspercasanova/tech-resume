@@ -43,7 +43,7 @@ export default function Countdown(){
         {timerComponents.length && timerComponents}
       </div>
 
-      <a href='newsenseactive.com'>NewSenseActive.com</a>
+      <a href='www.newsenseactive.com'>www.NewSenseActive.com</a>
     </div>
   )
 }
