@@ -22,21 +22,31 @@
   background: #7f7f7f;
   border-right: 1px solid white;
 }
+.Divider{
+  width: 100%
+}
+
 
 
 
 .App{
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   
   @include for-tablet-portrait-up{
-    max-width: 1000px;
+    max-width: 100%;
   }
   @include for-phone-only{
   
   }
 }
+
+
+
+
 
 
 
@@ -54,10 +64,9 @@
 }
 .tray{
   background-color: #1d2636;
-  
   background-color: #130f24;
-  
   border-radius: 4px;
+
   margin-top: 10px;
   margin-bottom: 10px;
   @include for-tablet-portrait-up{
@@ -70,34 +79,26 @@
 }
 
 
-.about{
-  height: 100%;
-  color: rgba(80, 0, 202, .3);
-}
 
 
 
-.wave{
-  left: 0;
-  bottom: 0;
+.footer_contact{
+  width: 100%;
   position: absolute;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite
+  display: flex;
+  left: 0;
+  top: 20%;
+  justify-content: space-between;
 }
 
-
-.header{
-  height: auto;
-}
-.center_content_body{
-  height: 100%;
+.footer_wave{
+  position: relative;
 }
 
 .footer{
+  margin-top: 10px;
   display: flex;
-  height: auto;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
+  flex-direction: column;
   .fab {
     font-size: 40px;
     animation: spinY 10s ease-in infinite;
@@ -107,20 +108,83 @@
   }
 }
 
+.bio{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background-color:  #252244cd;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  border-radius: 4px;
+}
 
 
+
+
+article{
+  width: 100%;
+  color: rgba(80, 0, 202, .3);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding-left: 30px;
+  padding-right: 30px;
+  & h1 {
+    font-size: 2.5em;
+    line-height: calc(1ex / 0.42);
+    margin: calc(1ex / 0.42) 0;
+  }
+  & h2 {
+    font-size: 2em;
+    line-height: calc(1ex / 0.42);
+    margin: calc(1ex / 0.42) 0;
+  }
+  & h3 {
+    font-size: 1.75em;
+    line-height: calc(1ex / 0.38);
+    margin: calc(1ex / 0.38) 0;
+  }
+  & h4 {
+    font-size: 1.5em;
+    line-height: calc(1ex / 0.37);
+    margin: calc(1ex / 0.37) 0;
+  }
+  & p{  
+    font-size: 1em;
+    line-height: calc(1ex / 0.32);
+    margin: calc(1ex / 0.32) 0;
+  }
+}
+
+
+.dl_bottom_section{
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: 1px solid #f79902;
+}
 
 .contact{
+  display: flex;
+  flex-direction: column;
   @include for-tablet-portrait-up{
     display: flex;
+    width: 95%;
   }
   @include for-phone-only{
+    
     border-bottom: 1px solid var(--color-epic);
   }
 }
 
 
 .driverslicense_header{
+  height: 69px;
+  border-radius: 4px;
+  background-image: linear-gradient(to right, rgba(13, 230, 255, 0.15) 0%, rgba(201, 189, 174, 0) 20%, rgba(13, 230, 255, 0.15) 90%,);
   justify-content: space-around;
   align-items: center;
   @include for-phone-only{
@@ -154,7 +218,7 @@
    }
    
 }
-.driverslicense_body_footer{
+.DLMetaStats{
   padding: 10px;
   background-color:  #252244cd;
   border-radius: 10px;
@@ -207,7 +271,24 @@
 
 
 
+
+
 .education{
+  padding: 10px;
+  margin-top: 10px;
+  & hr{
+    margin-bottom: 10px;
+    margin-top: 5px;
+  } 
+}
+
+.education_body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.education_text{
   display: flex;
   text-align: left;  
   @include for-phone-only{
@@ -215,7 +296,7 @@
     flex-wrap: wrap;
    }
 }
-.education_text{
+.education_text_body{
   padding-right: 20px;
   padding-left: 20px;
 
@@ -227,6 +308,10 @@
     text-indent: -20px;
   }
 }
+
+
+
+
 
 
 .technologies{
