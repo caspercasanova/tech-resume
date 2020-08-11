@@ -45,6 +45,25 @@
 }
 
 
+.Art{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color:  #252244cd;
+}
+.artworks{
+  width: 300px;
+  height: 300px; 
+  padding: 10px;
+  & img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
 
 
 
@@ -87,7 +106,16 @@
   position: absolute;
   display: flex;
   left: 0;
-  top: 20%;
+  top: 70%;
+  
+  padding-right: 10px;
+  & a{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  & p {
+    color: rgb(255, 0, 208);
+  }
   justify-content: space-between;
 }
 
@@ -99,6 +127,7 @@
   margin-top: 10px;
   display: flex;
   flex-direction: column;
+  
   .fab {
     font-size: 40px;
     animation: spinY 10s ease-in infinite;
@@ -245,8 +274,8 @@ article{
     border-radius: 0;
   }
   & .active{
-    color: var(--color-legendary);
-    border-color: var(--color-legendary);
+    color: #f79902;
+    border-color: #f79902;
   }
 }
 
@@ -274,8 +303,10 @@ article{
 
 
 .education{
+  background-color:  #252244cd;
   padding: 10px;
-  margin-top: 10px;
+  
+  height: 100%;
   & hr{
     margin-bottom: 10px;
     margin-top: 5px;
@@ -315,8 +346,10 @@ article{
 
 
 .technologies{
+  background-color:  #252244cd;
+  height: 100%;
   padding: 10px;
-  margin-top: 10px;
+  
   & hr{
     margin-bottom: 10px;
     margin-top: 5px;
@@ -390,12 +423,6 @@ article{
 
 
 
-
-
-
-
-
-
 .fa-file-invoice-dollar{
   color: rgb(159, 20, 20);
 }
@@ -438,48 +465,37 @@ article{
 
 
 
-.slider{
 
-  
-  & .slider_btn_container{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  & .slider_block_container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  & .block{
-    height: 10px;
-  }
-  & .active{
-    color: inherit;
-    background-color: var(--color-pink);
-  }
-  & .inactive{
-    background-color: rgb(35, 33, 33);
-    border-color: rgb(35, 33, 33);
-    &:hover{
-      background-color: var(--color-rare);
-      opacity: .3;
-    }
-  }
-}
 
-.countdown{
+.modal_background{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 100;
+}
+.modal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  position: relative;
+  height: 70%;
+}
+.modal_header{
+  display: flex;
+  color: rgb(255, 0, 208);
+  justify-content: space-between;
+}
+.modal_img{
   width: 100%;
-  & .countdown_body{
-    display: flex;
-  }
-  & .interval{
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
+  height: 100%;
+  & img {
+    width: 100%;
+    height: 100%;
   }
 }

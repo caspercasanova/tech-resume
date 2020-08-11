@@ -50,7 +50,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+button{
+  cursor: pointer;
+}
 a {
   color: var(--color-rare);
   text-decoration: none;

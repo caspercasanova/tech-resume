@@ -7,7 +7,7 @@ import Wave from 'react-wavify'
 
 
 export default function Footer() {
-  let date = new Date();
+  let date = new Date().getFullYear();
   return (
     <footer className='footer'>
      
@@ -27,7 +27,7 @@ export default function Footer() {
             <a href='https://github.com/caspercasanova'><i className="fab fa-github"></i></a>
           </div>
           <p>
-            CopyWrite {date.getFullYear()}
+            CopyWrite {date}
           </p>
         </div>
       </div>

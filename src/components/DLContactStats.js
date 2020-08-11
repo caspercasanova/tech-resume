@@ -13,12 +13,12 @@ export default function DLContactStats() {
       </div>
 
       <div className='txt_row'>
-        <h6>Phone </h6>
-        <a href="tel:1-310-977-3170">1-310-977-3170</a>
+        <h6 style={{color: 'var(--color-legendary)'}}>Phone </h6>
+        <a style={{color: 'var(--color-legendary)'}} href="tel:1-310-977-3170">1-310-977-3170</a>
       </div>
       <div className='txt_row'>
-        <h6>Email </h6>
-        <a href='mailto:nhjlopez@gmail.com'>nhjlopez@gmail.com</a>
+        <h6 style={{color: 'var(--color-legendary)'}}>Email </h6>
+        <a style={{color: 'var(--color-legendary)'}} href='mailto:nhjlopez@gmail.com'>nhjlopez@gmail.com</a>
       </div>
       <div className='txt_row'>
         <h6>ADDR</h6>
