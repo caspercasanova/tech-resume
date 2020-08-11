@@ -6,7 +6,7 @@ const Divider = () => {
   )
 }
 
-export default function Bio(){
+export default function About(){
   let beginning = new Date("8/30/2012")
   let current = new Date()
   let differenceInTime = current.getTime() - beginning.getTime(); 
@@ -40,10 +40,10 @@ export default function Bio(){
         <p>I was motivated and determined to figure out the solutions to these code challenges. Google was my ally and I tried my best to absorb the concepts of computer programming from as many resources as possible.</p>
         <h3>Things Changed In March 2019...</h3>
         <div className='txt_row'>
-            <h6>
+            <h6 style={{color: 'var(--color-legendary)'}}>
             Number of breaths taken since 1994:
             </h6> 
-            <p>
+            <p style={{color: 'var(--color-legendary)'}}>
               {numberOfBreathsTaken.toPrecision(4)}
             </p>
         </div>
@@ -57,10 +57,10 @@ export default function Bio(){
         <p>Around Oct of 2019 I had decided it was time for me to attend a bootcamp. Hack Reactor in Los Angeles caught my eye, and so began the course work for getting <i>ACCEPTED</i> into the program. This was when my JavaScript fluency really soared. Hack Reactor had the type of work I needed. Repetition.</p>
         
         <div className='txt_row'>
-            <h6>
+            <h6 style={{color: 'var(--color-legendary)'}}>
             Hours<i style={{paddingLeft: '4px', paddingRight: '4px', letterSpacing: '3px'}}>(3.5 per wk)</i> spent at the gym since 2012:
             </h6> 
-            <p>
+            <p style={{color: 'var(--color-legendary)'}}>
               {numberOfHoursAtGym.toPrecision(7)}
             </p>
         </div>
@@ -75,10 +75,10 @@ export default function Bio(){
         
         <p>Corona 2020:</p>
         <div className='txt_row'>
-            <h6>
+            <h6 style={{color: 'var(--color-legendary)'}}>
             Estimated cups of coffee drank since I started drinking in 2012:
             </h6> 
-            <p>
+            <p style={{color: 'var(--color-legendary)'}}>
               {numberOfCoffees.toPrecision(7)}
             </p>
         </div>
@@ -99,10 +99,10 @@ export default function Bio(){
         <p>I'll end it there. This is long and not that crazy of a story, but it's mine.</p>
         <p>See ya 'round.</p>
         <div className='txt_row'>
-            <h6>
+            <h6 style={{color: 'var(--color-legendary)'}}>
             Hours spent coding since Oct 2018:
             </h6> 
-            <p>
+            <p style={{color: 'var(--color-legendary)'}}>
               {numberOfCodeHours.toPrecision(7)}
             </p>
         </div>

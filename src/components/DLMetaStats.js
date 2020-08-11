@@ -16,20 +16,17 @@ export default function DLMetaStats() {
           <h6>EYES</h6>
           <p>HZL</p>
         </div>
+        <div className='txt_row'>
+          <h6>HGT</h6>
+          <p>5'-09''</p>
+        </div>
+        <div className='txt_row'>
+          <h6>WGT</h6>
+          <p>150lb</p>
+        </div>
+  
       </div>
-      <div>
-      <div className='txt_row'>
-        <h6>HGT</h6>
-        <p>5'-09''</p>
-      </div>
-      <div className='txt_row'>
-        <h6>WGT</h6>
-        <p>150lb</p>
-      </div>
-      <div className='txt_row'>
-        <h6>Y.O.</h6>
-        <p>26</p>
-      </div>
+
       <hr style={{marginBottom: '3px'}}/>
       <div className='txt_row'>
         <h6>Known Alias ( es ) </h6>
@@ -38,7 +35,11 @@ export default function DLMetaStats() {
           <p>'Casper Casanova'</p>
         </div>
       </div>
-    </div>
+      <div className='txt_row'>
+        <h6>LUCKY #</h6>
+        <p>0131310</p>
+      </div>
+    
   </div>
   )
 }

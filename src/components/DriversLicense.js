@@ -4,7 +4,7 @@ import Technologies from './Technologies'
 import Education from './Education'
 
 import DLMetaStats from './DLMetaStats'
-import Bio from './Bio.js'
+import About from './About.js'
 
 import profilePic from '../pics/profilePic.jpg'
 import DLContactStats from './DLContactStats'
@@ -24,10 +24,24 @@ import art11 from '../art/untitledFace003.png'
 import art12 from '../art/untitledFace004.png'
 
 
+const Bio = () => {
+  return(
+    <div className='driverslicense_body'>
+      <div className='profile_pic' style={{textAlign: 'center'}}>
+        <img src={profilePic} alt='profile'/>
+        <div style={{paddingBottom: '10px'}}>
+          <h3>Nicholas</h3>
+          <h3>Lopez</h3>
+        </div>
+      </div>
+      <DLContactStats />
+      <DLMetaStats />
+    </div>
+  )
+}
 
 
-
-const DriversLiscence = () => {
+const DriversLicense = () => {
   const [component, setComponent] = useState('bio')
   const [modal, toggleModal] = useState(false)
 
@@ -37,35 +51,29 @@ const DriversLiscence = () => {
 
   return (
     <>
-      <div className='contact'>
+      <div className='DriversLicense'>
         <div className='tray' style={{width: '100%'}} >
           <div className='txt_row driverslicense_header'>
             <h3>C A L I F O R N I A</h3>
             <p>DEVELOPER LISCENSE</p>
           </div>
           <hr className='driverslicense_hr_top'/>
-          <div className='driverslicense_body'>
-            <div className='profile_pic' style={{textAlign: 'center'}}>
-              <img src={profilePic} alt='profile'/>
-              <h3>Nicholas</h3>
-              <h3>Lopez</h3>
-            </div>
-            <DLContactStats />
-            <DLMetaStats />
-          </div>
-        <div className='dl_btn_holder'>
-          <button className={component === "bio" ? 'active' : ''} onClick={()=>setComponent('bio')}>Bio</button>
-          <button className={component === "tech" ? 'active' : ''} onClick={()=>setComponent('tech')}>Technologies</button>
-          <button className={component === "education" ? 'active' : ''} onClick={()=>setComponent('education')}>Education</button>
-          <button className={component === "education" ? 'active' : ''} onClick={()=>setComponent('art')}>Art</button>
-        </div>
-
         <div className='dl_bottom_section'>
+          {component === "bio" && <Bio />}
           {component === "tech" && <Technologies />}
           {component === "education" && <Education />}
-          {component === "bio" && <Bio />}
+          {component === "about" && <About />}
           {component === "art" && <Art  toggleModal={toggleModal} setCurrentArtPiece={setCurrentArtPiece} artPieces={artPieces} />}
         </div>
+          
+        <div className='dl_btn_holder'>
+          <button className={component === "bio" ? 'active' : ''} onClick={()=>setComponent('bio')}>Bio</button>
+          <button className={component === "about" ? 'active' : ''} onClick={()=>setComponent('about')}>About</button>
+          <button className={component === "tech" ? 'active' : ''} onClick={()=>setComponent('tech')}>Technologies</button>
+          <button className={component === "education" ? 'active' : ''} onClick={()=>setComponent('education')}>Education</button>
+          <button className={component === "art" ? 'active' : ''} onClick={()=>setComponent('art')}>Art</button>
+        </div>
+
 
         
         <Footer />
@@ -101,5 +109,5 @@ const Modal = ({artPiece, togglModal}) => {
 
 
 
-export default DriversLiscence
+export default DriversLicense
 

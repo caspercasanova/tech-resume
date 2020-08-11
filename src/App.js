@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.scss';
 
-import DriversLiscence from './components/DriversLiscence';
+import DriversLicense from './components/DriversLicense';
 
 function App() {
   // const [ui, setUI] = useState('home') 
   return (
     <div className="App">
-        <DriversLiscence />
+        <DriversLicense />
         {console.log(`%c${secretMessage}`, 'color: cyan; font-weight: bold;')}
     </div>
   );
