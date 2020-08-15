@@ -44,25 +44,24 @@ const DriversLicense = ({artPieces, toggleModal, setCurrentArtPiece}) => {
             <p>DEVELOPER LISCENSE</p>
           </div>
           <hr className='driverslicense_hr_top'/>
-        <div className='dl_bottom_section'>
-          {component === "bio" && <Bio />}
-          {component === "tech" && <Technologies />}
-          {component === "education" && <Education />}
-          {component === "about" && <About />}
-          {component === "art" && <Art  toggleModal={toggleModal} setCurrentArtPiece={setCurrentArtPiece} artPieces={artPieces} />}
-        </div>
-          
-        <div className='dl_btn_holder'>
-          <button className={component === "bio" ? 'active' : ''} onClick={()=>setComponent('bio')}>Bio</button>
-          <button className={component === "about" ? 'active' : ''} onClick={()=>setComponent('about')}>About</button>
-          <button className={component === "tech" ? 'active' : ''} onClick={()=>setComponent('tech')}>Technologies</button>
-          <button className={component === "education" ? 'active' : ''} onClick={()=>setComponent('education')}>Education</button>
-          <button className={component === "art" ? 'active' : ''} onClick={()=>setComponent('art')}>Art</button>
-        </div>
+          <div className='dl_btn_holder'>
+            <button className={component === "bio" ? 'active' : ''} onClick={()=>setComponent('bio')}>Bio</button>
+            <button className={component === "about" ? 'active' : ''} onClick={()=>setComponent('about')}>About</button>
+            <button className={component === "tech" ? 'active' : ''} onClick={()=>setComponent('tech')}>Technologies</button>
+            <button className={component === "education" ? 'active' : ''} onClick={()=>setComponent('education')}>Education</button>
+            <button className={component === "art" ? 'active' : ''} onClick={()=>setComponent('art')}>Art</button>
+          </div>
+          <div className='dl_bottom_section'>
+            {component === "bio" && <Bio />}
+            {component === "tech" && <Technologies />}
+            {component === "education" && <Education />}
+            {component === "about" && <About />}
+            {component === "art" && <Art  toggleModal={toggleModal} setCurrentArtPiece={setCurrentArtPiece} artPieces={artPieces} />}
+          </div>
+            
 
 
-        
-        <Footer />
+          <Footer />
       </div>
     </div>
  
