@@ -10,9 +10,9 @@ const Technologies = () =>{
   return (
   <div className='technologies'>
     <h3>Technologies</h3>
+    <h6>Frontend Technologies</h6>
+    <hr style={{width: '100%'}}></hr>
     <div className='technologies_body'>
-      <h6>Frontend Technologies</h6>
-      <hr style={{width: '100%'}}></hr>
       <div className='frontend'>
         <span><i className="fab fa-js"></i></span>
         <span><i className="fab fa-node"></i></span>

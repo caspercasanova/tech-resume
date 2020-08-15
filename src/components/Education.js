@@ -6,9 +6,9 @@ export default function Education() {
   return (
     <div className='education'>
       <h3>Hack Reactor</h3>
+      <h6>Computer Software Engineering Immersive</h6>
+      <hr style={{width: '100%'}}></hr>
       <div className='education_body'>
-        <h6>Computer Software Engineering Immersive</h6>
-        <hr style={{width: '100%'}}></hr>
         <div className='education_text'>
           <a href='https://www.hackreactor.com/'><div className='hackreactorlogo'><img src={hackreactor} alt='SQL Logo'/></div></a>
           
