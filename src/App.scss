@@ -33,7 +33,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    
   }
   @include for-phone-only{
     height: 100%;
@@ -497,6 +496,7 @@ article{
   position: absolute;
   left: 0;
   top: 0;
+  height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 1);
   display: flex;
