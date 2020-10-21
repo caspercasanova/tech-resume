@@ -54,6 +54,41 @@
 	}
 }
 
+.modal_background {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	background: rgba(0, 0, 0, 1);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+.modal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+	position: relative;
+	height: 70%;
+}
+.modal_header {
+	display: flex;
+	color: rgb(255, 0, 208);
+	justify-content: space-between;
+}
+.modal_img {
+	width: 100%;
+	height: 100%;
+	& img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
 .DriversLicense {
 	display: flex;
 	flex-direction: column;
@@ -473,39 +508,4 @@ article {
 	font-size: 50px;
 	color: deeppink;
 	margin-bottom: 10px;
-}
-
-.modal_background {
-	position: absolute;
-	left: 0;
-	top: 0;
-
-	width: 100%;
-	background: rgba(0, 0, 0, 1);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	z-index: 100;
-}
-.modal {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 70%;
-	position: relative;
-	height: 70%;
-}
-.modal_header {
-	display: flex;
-	color: rgb(255, 0, 208);
-	justify-content: space-between;
-}
-.modal_img {
-	width: 100%;
-	height: 100%;
-	& img {
-		width: 100%;
-		height: 100%;
-	}
 }
