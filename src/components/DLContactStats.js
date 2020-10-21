@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ResumePDF from '../documents/Nicholas_Lopez_Resume.pdf'
 export default function DLContactStats() {
   return (
     <div className='driverslicense_body_text'>
@@ -35,7 +35,7 @@ export default function DLContactStats() {
       </div>
       <div className='txt_row'>
         <h6 style={{color: 'var(--color-legendary)'}}>Resume</h6>
-        <a download href={'/Nicholas Lopez Resume v2.pdf'}  style={{color: 'var(--color-legendary)'}}>
+        <a download href={ResumePDF}  style={{color: 'var(--color-legendary)'}}>
           <div style={{textAlign: 'center'}}>
             <p style={{color: 'var(--color-legendary)'}}>[ Download ]</p>
             <p style={{color: 'var(--color-legendary)'}}>Resume.pdf</p>
